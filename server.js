@@ -16,7 +16,7 @@ connectDatabase()
 const app = express() ;
 
 app.use(express.json())
-app.use(cors());
+app.use(cors())
 
 app.use("/",IndexRoute)
 
@@ -37,6 +37,3 @@ process.on("unhandledRejection",(err , promise) =>{
 
     server.close(()=>process.exit(1))
 })
-
-
-
